@@ -1,0 +1,312 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang = "en">
+   <head>
+      <title>Nghi Tran Digital Primer Portfolio</title>
+	  
+	  <!-- This loads the D3 library -->
+
+      <script src = "https://d3js.org/d3.v4.min.js"></script>
+
+	  <link rel="stylesheet" href="stylesheet.css">
+
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+
+      <style>
+
+            .stop-left {
+                stop-color: #c47878;  /* Pink */
+            }
+            .stop-right {
+                stop-color: #d9ad9f;  /* Yellow */
+            }
+            .filled {
+                fill: url(#mainGradient);
+            }
+
+      
+
+      </style>
+
+
+   </head>
+
+   <body>
+
+   		<h1><a class= "title" href="file:///Volumes/NTRAN-2020/SOPHOMORE%202/index.html"> Digital Primer Portfolio </a></h1>
+   		<h3> Nghi Tran </h3>
+
+
+
+   		<div class="grid1">
+
+  			<div class="item1">
+  				<a href = "file:///Volumes/NTRAN-2020/SOPHOMORE%202/css%20and%20web%20typography.html"> 
+  				CSS and Web Typography </a>
+  			</div>
+  			<div class="item2">
+  				<a href = ""> Accessibility and Color </a>
+  			</div>
+  			<div class="item3">
+  				<a href = ""> Design Systems </a>
+  			</div>  
+  			<div class="item4">
+  				<a href = ""> Primer Style Guides </a>
+  			</div>
+  			<div class="item5">
+  				<a href = ""> Responsive Design </a>
+  			</div>
+   
+		</div>
+
+		<br>
+		<br>
+
+   		<div class="grid2">
+
+  			<div class="item6">
+  				<h2 style = "position: relative; left: 30px;"> 
+  					What I learned in the lesson </h2>
+  				<p style = "position: relative;  left: 30px;"> 
+  					Lorem ipsum dolor sit amet, consectetur <br>
+  					adipiscing elit, sed do eiusmod tempor <br>
+  					incididunt ut labore et dolore magna aliqua. <br>
+  					Ut enim ad minim veniam, quis nostrud exercitation <br>
+  					ullamco laboris nisi ut aliquip ex ea commodo <br>
+  					consequat. Duis aute irure dolor in reprehenderit <br>
+  					in voluptate velit esse cillum dolore eu fugiat <br>
+  					nulla pariatur. Excepteur sint occaecat cupidatat <br>
+  					non proident, sunt in culpa qui officia deserunt <br>
+  					mollit anim id est laborum. <br>
+  					
+  				</p>
+  			</div>
+  			<div class="item7">
+  				<div id = "canvas"></div>
+      			<div class = "circle"></div>
+
+  			</div>
+  			
+   				
+		</div>
+
+		
+	  <script>
+
+	  	var width= 660,
+          height = 660,
+          padding = 0;
+
+      	var svg = d3.select("#canvas")
+         .append("svg")
+         .attr("width", width)
+         .attr("height", height);
+                
+
+         svg.attr("width", width).attr("height", height);
+
+      // create the svg:defs element and the main gradient definition.
+      var svgDefs = svg.append("defs");
+
+      var mainGradient = svgDefs.append("linearGradient")
+         .attr("id", "mainGradient");
+
+      // create the stops of the main gradient
+      // each stop will be assigned a class to style the stop 
+         mainGradient.append("stop")
+            .attr("class", "stop-left")
+            .attr("offset", "0");
+
+         mainGradient.append("stop")
+            .attr("class", "stop-right")
+            .attr("offset", "1");
+
+      // fill shape with gradient
+         svg.append("rect")
+            .classed("filled", true)
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", width)
+            .attr("height", height);
+
+
+      	svg.append("rect")
+            .classed("filled", true)
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", width/1.1)
+            .attr("height", height/1.1)
+            .attr("transform", "translate(30,30)")
+            .style("stroke-width", "20")
+            .attr("stroke", "#ece6e0");
+
+
+        svg.append("circle")
+               .attr("cx", width/4.0)
+               .attr("cy", height/4.0)
+               .attr("r", width*0.5)
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("fill", "none");
+
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.17)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(120,0)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.15)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(120,0)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.12)
+               .attr("fill", "white")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(55,75)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.55)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(100,100)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.03)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")  
+               .attr("transform", "translate(125,-140)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.02)
+               .attr("fill", "white")
+               .attr("transform", "translate(125,-140)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.05)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")  
+               .attr("transform", "translate(-110,125)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.04)
+               .attr("fill", "white")
+               .attr("transform", "translate(-110,125)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.01)
+               .attr("fill", "white")
+               .attr("transform", "translate(-70,140)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.005)
+               .attr("fill", "white")
+               .attr("transform", "translate(105,-160)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.09)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(-140,-165)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.02)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(-170,-100)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.02)
+               .attr("fill", "none")
+               .style("stroke-width", "1")
+               .attr("stroke", "white")
+               .attr("transform", "translate(170,190)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.006)
+               .attr("fill", "white")
+               .attr("transform", "translate(160,170)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.01)
+               .attr("fill", "white")
+               .attr("transform", "translate(185,210)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.007)
+               .attr("fill", "white")
+               .attr("transform", "translate(-120,-190)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.015)
+               .attr("fill", "white")
+               .attr("transform", "translate(-90,-220)");
+
+            svg.append("circle")
+               .attr("cx", width/2.0)
+               .attr("cy", height/2.0)
+               .attr("r", width*0.015)
+               .attr("fill", "white")
+               .attr("transform", "translate(-90,-220)");
+
+
+
+
+        
+        
+
+	  </script>  
+	  
+       
+   </body>
+</html>
