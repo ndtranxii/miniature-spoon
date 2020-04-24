@@ -1,0 +1,165 @@
+
+body {
+
+	background-color: #ece6e0;
+}
+
+
+h1 {
+
+	font-family: 'Manrope', sans-serif;
+	color: #c47878;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 50px;
+
+}
+
+h2 {
+
+	font-family: 'Manrope', sans-serif;
+	color: #c47878;
+	font-size: 30px;
+
+}
+
+
+h3 {
+
+	font-family: 'Manrope', sans-serif;
+	color: #d9ad9f;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+	top: -45px;
+
+
+}
+
+
+p {
+
+	font-family: 'Manrope', sans-serif;
+	color: #d9ad9f;
+	font-size: 20px;
+	
+
+}
+
+
+a.title {
+	font-family: 'Manrope', sans-serif;
+	text-decoration: none;
+	color: #c47878;
+	font-size: 50px;
+}
+
+a {
+	font-family: 'Manrope', sans-serif;
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+
+.grid1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 0px;
+  padding: 0px;
+  width: 1300px;
+  margin: auto;
+  text-align: center;
+
+}
+
+.item1 {
+
+	background-color: #ccc2c0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.item2 {
+
+	background-color: #ccc2c0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.item3 {
+
+	background-color: #ccc2c0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.item4 {
+
+	background-color: #ccc2c0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+.item5 {
+
+	background-color: #ccc2c0;
+	padding-top: 30px;
+	padding-bottom: 30px;
+
+}
+
+
+.grid2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  background-color: none;
+  padding: 30px;
+  width: 1300px;
+  margin: auto;
+  
+
+}
+
+
+.item6 {
+  background-color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 570px;
+  height: 400px;
+ 
+}
+.item7 {
+  background-color: none;
+  justify-self: end;
+
+
+ 
+}
+
+.paragraph {
+  background-color: white;
+  font-family: 'EB Garamond', serif;
+  font-size: 34pt;
+  border: 1px solid black;
+  margin-left: 350px;
+  margin-right: 350px;
+  padding-right: 100px;
+  padding-left: 150px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  letter-spacing: 23;
+  
+  
+  
+  
+}
+
+font-family: 'Quicksand', sans-serif;
+font-family: 'Manrope', sans-serif;
